@@ -23,6 +23,8 @@
               clifford: '#da373d',
               'bike-primary': '#E76F51',
               'bike-slider': 'rgba(231, 111, 81, 0.10)',
+              'sec-title': '#0A0826',
+              'text-primary': '#6C6C6C',
             }
           }
         }
@@ -150,7 +152,53 @@
     </header>
     <!-- header section ends here -->
 
-    <main></main>
+    <main class="md:container md:mx-auto border-2 border-red-400">
+      <section></section>
+      <section>
+        <h2 class="text-center text-sec-title text-5xl font-semibold capitalize">latest News</h2>
+        <div class="flex flex-wrap lg:flex-nowrap gap-5 mt-12">
+          <!-- card 1 -->
+          <div class="card flex-1 pt-5 w-96 bg-base-100 border-2 border-blue-500 drop-shadow-xl">
+            <figure>
+              <img class="w-[90%]" src="./images/others/latest1.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-semibold text-3xl text-[#18191F]">Ducati XDIAVEL S-73</h2>
+              <p class="mt-2 text-text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+              <div class="card-actions justify-start">
+                <button class="btn px-4 btn-outline btn-error font-medium mt-10 text-lg rounded-md capitalize">Read More</button>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card flex-1 pt-5 w-96 bg-base-100 border-2 border-blue-500 drop-shadow-xl">
+            <figure>
+              <img class="w-[90%]" src="./images/others/latest2.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-semibold text-3xl text-[#18191F]">Motorcycles & Scooters</h2>
+              <p class="mt-2 text-text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+              <div class="card-actions justify-start">
+                <button class="btn px-4 btn-outline btn-error font-medium mt-10 text-lg rounded-md capitalize">Read More</button>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card flex-1 pt-5 w-96 bg-base-100 border-2 border-blue-500 drop-shadow-xl">
+            <figure>
+              <img  class="w-[90%]" src="./images/others/latest3.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-semibold text-3xl text-[#18191F]">2021 Honda CBR500R</h2>
+              <p class="mt-2 text-text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+              <div class="card-actions justify-start">
+                <button class="btn px-4 btn-outline btn-error font-medium mt-10 text-lg rounded-md capitalize">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
 </body>
 </html>
