@@ -4,11 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biker Zone</title>
-    <!-- daisy + tailwind stylesheet cdn link -->
+
+    <!-- daisyui + tailwind stylesheet cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts: poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- tailwind custom classes -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'bike-primary': '#E76F51',
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- custom stylesheet -->
+    <style>
+      .font-poppins{
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+
 </head>
-<body>
-    
+<body class="font-poppins">
+    <!-- header section starts here -->
+    <header class="md:container md:mx-auto px-4 border-2 border-red-300">
+        <!-- navbar section starts here -->
+        <nav class="my-12">
+            <div class="navbar justify-between bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>News</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="normal-case font-bold text-4xl">Bike Dekho</a>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                  <ul class="menu menu-horizontal font-medium text-base space-x-1 pr-12">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end w-auto">
+                  <a class="btn h-auto btn-error font-bold text-xl text-white rounded-sm capitalize lg:px-12 lg:py-4">Login</a>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar section ends here -->
+    </header>
+    <!-- header section ends here -->
+
+    <main></main>
+    <footer></footer>
 </body>
 </html>
