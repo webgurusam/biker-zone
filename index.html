@@ -36,6 +36,9 @@
       .font-poppins{
         font-family: 'Poppins', sans-serif;
       }
+      .btn-outline.btn-error:hover{
+        color: #fff;
+      }
     </style>
 
 </head>
@@ -152,6 +155,7 @@
     </header>
     <!-- header section ends here -->
 
+    <!-- main content section ends here -->
     <main class="md:container md:mx-auto">
       <!-- bike section starts here -->
       <section class="mb-32 mt-36">
@@ -288,6 +292,8 @@
         </div>
       </section>
       <!-- happy clients section ends here -->
+
+      <!-- FAQ section starts here -->
       <section class="mt-32 mb-36">
         <h2 class="text-center text-sec-title text-4xl md:text-5xl font-semibold capitalize">Frequently <span class="text-bike-primary">Asked Questions</span></h2>
         <div class="flex flex-col px-3 md:px-0 md:flex-row items-center gap-20 mt-12">
@@ -340,7 +346,40 @@
           </div>
         </div>
       </section>
+      <!-- FAQ section ends here -->
     </main>
-    <footer></footer>
+    <!-- main content section ends here -->
+
+    <!-- footer section starts here -->
+    <footer class="pt-14 pb-20 bg-[#0B0D17] text-base-content">
+      <div class="md:container md:mx-auto">
+        <div class="footer gap-y-20 md:gap-y-10 md:justify-between px-4">
+          <div class="text-white space-y-3">
+            <nav class="text-base flex flex-wrap gap-6">
+              <a class="link link-hover">Download Now</a> 
+              <a class="link link-hover">License</a> 
+            </nav> 
+            <nav class="text-base flex flex-wrap gap-6">
+              <a class="link link-hover">About</a> 
+              <a class="link link-hover">Features</a> 
+              <a class="link link-hover">Pricing</a> 
+              <a class="link link-hover">Careers</a>
+              <a class="link link-hover">Help</a>
+              <a class="link link-hover">Privacy Policy</a>
+            </nav> 
+            <p class="pt-3 hidden md:block text-[#D9DBE1]">&copy; 2020 bike. All rights reserved</p>
+          </div>
+          <nav>
+            <header class="footer-title text-[#D9DBE1] font-medium text-lg capitalize">Get the App</header> 
+            <div class="grid grid-cols-1 gap-4">
+              <a><img class="w-32 h-10" src="./images/others/android.png" alt=""></a>
+              <a><img class="w-32 h-10" src="./images/others/ios.png" alt=""></a>
+            </div>
+          </nav>
+        </div>
+        <p class="pt-16 block md:hidden text-[#D9DBE1] text-center">&copy; 2020 bike. All rights reserved</p>
+      </div>
+    </footer>
+    <!-- footer section ends here -->
 </body>
 </html>
